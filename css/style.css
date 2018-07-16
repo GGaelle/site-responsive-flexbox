@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+body {
+  font-family: 'Lora', serif;
+  background: #f0f0f0;
+  box-sizing: border-box;
+  height: auto;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  margin: 0;
+}
+h1 {
+  font-size: 250%;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 150%;
+}
+img {
+  display: block;
+  width: 100%;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+}
+.main-content-flex,
+.main-text-img,
+.caption,
+footer {
+    text-align: center;
+}
+
+/* Partie haute */
+.main-content {
+  background: #fff;
+}
+.main-content-flex {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+.main-content-img {
+  background: url('https://source.unsplash.com/WLUHO9A_xik');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 20px 0;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #4e4e4e;
+}
+.btn:hover {
+  background: #494949;
+  color: #fff;
+  transition: all ease-in-out 500ms;
+}
+ion-icon {
+  border-radius: 50px;
+  background: #085b56;
+  padding: 5px;
+  margin: 0 15px;
+  font-size: 15px;
+  vertical-align: text-top;
+  color: #fff;
+}
+
+
+/* Partie basse */
+.main-text-img {
+  padding: 10px;
+  background: #202020;
+  color: #fff;
+}
+.main-text-img h2 {
+  vertical-align: baseline;
+}
+.caption {
+  padding: 12px;
+}
+.caption p {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+.caption h3 {
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  padding: 35px 10px;
+  margin: auto;
+  color: #202020;
+}
+footer h3 {
+  font-size: 200%;
+}
+.footer-text {
+  font-weight: 600;
+}
+hr {
+  width: 20%;
+  color: rgb(98, 98, 98);
+}
+
+
+/* Medias queries */
+@media (min-width: 750px) {
+  .main-content {
+    display: flex;
+    height: 100%;
+  }
+  .main-content-flex {
+    height: 85vh;
+  }
+  .main-content-img{
+    height: 85vh;
+  }
+}
